@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block title %}Облік витрат на операцію{% endblock %}
+{% block content %}
+{% load static %}
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+   <h2>Облік витрат на операцію</h2>
+   <form role="form" class="row">
+
+      <div class="column">
+         <div class="form-group half">
+            <input name="name" type="text" class="form-control"
+               placeholder="Електрична енергія кульового млина" />
+            {# <p class="help-block">Введите имя на русском языке</p>#}
+         </div>
+         <div class="form-group half">
+            <input name="email" type="text" class="form-control"
+               placeholder="Електрична енергія класифікатора" />
+         </div>
+         <div class="form-group half">
+            <input name="name" type="text" class="form-control" placeholder="Витрачений ресурс кульового млина" />
+            {# <p class="help-block">Введите имя на русском языке</p>#}
+         </div>
+         <div class="form-group half">
+            <input name="email" type="text" class="form-control" placeholder="Витрачений ресурс класифікатора" />
+         </div>
+         <div class="form-group half">
+            <input name="name" type="text" class="form-control"
+               placeholder="Витрачений ресурс електропривода " />
+            {# <p class="help-block">Введите имя на русском языке</p>#}
+         </div>
+         <div class="form-group half">
+            <input name="email" type="text" class="form-control" placeholder="Витрачений ресурс мелючих елементів" />
+         </div>
+         <div class="form-group">
+            <input type="submit" class="btn btn-info" value="Розрахувати" />
+         </div>
+      </div>
+      <div class="column">
+         <div class="form-group half">
+            <input name="name" type="text" readonly class="form-control" value="560.00"/>
+            <p class="help-block">Вартість споживаних електроенергії</p>
+         </div>
+         <div class="form-group half">
+            <input name="name" type="text" readonly class="form-control " value="370.00"/>
+            <p class="help-block">Супутні витрати</p>
+         </div>
+         <div class="form-group half">
+            <input name="name" type="text"  readonly class="form-control" value="250.00"/>
+            <p class="help-block">Заробітна плата і податкове навантаження</p>
+         </div>
+      </div>
+
+
+   </form>
+</main>
+{% endblock %}
