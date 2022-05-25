@@ -32,7 +32,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="{% url 'control:index' %}">
                   <span data-feather="shopping-cart"></span>
                   Контроль
                 </a>
@@ -52,7 +52,7 @@
               {% if user.is_authenticated %}
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'authorize:log_out' %}">
-                  <button class="btn btn-dark my-2 my-sm-0" type="submit">{{user.username}}</button>
+{#                  <button class="btn btn-dark my-2 my-sm-0" type="submit">{{user.username}}</button>#}
                   <span data-feather="bar-chart-2"></span>
                   Вийти
                 </a>

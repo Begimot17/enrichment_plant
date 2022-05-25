@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'main.apps.MainConfig',
+    'control.apps.ControlConfig',
     'appearance.apps.AppearanceConfig',
     'assessment.apps.AssessmentConfig',
     'analysis.apps.AnalysisConfig',
